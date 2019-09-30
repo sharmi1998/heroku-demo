@@ -3,7 +3,7 @@ var bodyParser=require('body-parser')
 var app=new Express()
 var request=require('request')
 const Mongoose=require('mongoose');
-//  const viewall="http://localhost:3000/viewall"
+//   const viewall="http://localhost:3000/viewall"
  var viewall="https://dashboard.heroku.com/apps/recipie-fsd/viewall";
 
 app.set('view engine','ejs')
