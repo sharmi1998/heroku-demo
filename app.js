@@ -4,7 +4,7 @@ var app=new Express()
 var request=require('request')
 const Mongoose=require('mongoose');
 //   const viewall="http://localhost:3000/viewall"
- var viewall="https://dashboard.heroku.com/apps/recipie-fsd/viewall";
+//  var viewall="https://dashboard.heroku.com/apps/recipie-fsd/viewall";
 
 app.set('view engine','ejs')
 app.use(Express.static(__dirname+"/public"));
@@ -128,7 +128,7 @@ app.get('/readmore/:id',(req,res)=>{
 
     const x=req.params.id;
     // const read="http://localhost:3000/getAempApi/"+x;
-    var read="https://dashboard.heroku.com/apps/recipie-fsd/getAempApi/" +x;
+    // var read="https://dashboard.heroku.com/apps/recipie-fsd/getAempApi/" +x;
 
     request(read,(error,response,body)=>
 {
